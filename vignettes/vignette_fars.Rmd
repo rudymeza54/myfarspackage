@@ -1,28 +1,23 @@
 ---
-title: "fars_vignette"
-author: "Rudy Meza "
-date: "`r Sys.Date()`"
+title: "vignette_fars"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteEngine{knitr::knitr}
-  %\VignetteIndexEntry{Title of your vignette}
-  %\usepackage[UTF-8]{inputenc}
-  
+  %\VignetteIndexEntry{vignette_fars}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include = FALSE}
+```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
 
-The fars Package reads an example dataset from the  US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
-
-
-```{r, eval=F}
+```{r setup}
 library(myfarspackage)
 ```
+
 
 ## Package Dependencies
 
