@@ -1,0 +1,78 @@
+---
+title: "fars_vignette"
+author: "Rudy Meza "
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The fars Package reads an example dataset from the  US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+
+```{r, eval=F}
+library(fars)
+```
+
+## Package Dependencies
+
+The `fars` package imports packages - `readr`, `dplyr`, `tidyr`,`tidyverse`
+It imports functions from packages - `maps`, `read_csv`, `points`.
+
+## Export Functions
+
+The `fars` package comprises of several functions -
+
+- `fars_map_state`
+- `fars_read`
+- `fars_read_years`
+- `fars_summarize_years`
+- `make_filename`
+
+
+## Using the Package
+
+After importing the package, you can use the available functions -
+
+**1. `make_filename` **
+
+The purpose of this function is to add year of file to file_name_output
+
+
+```{r, eval=F}
+make_filename(2014)
+```
+
+**2. `fars_read_years` **
+
+The purpose of this function is to filter list of dataframes and select month and year of dataframe
+
+```{r, eval=F}
+fars_read_years(c(2013, 2014)
+```
+
+**3. `fars_summarize_years` **
+
+The purpose of this function is to filter and groupby month and state, then total up the accidents
+
+```{r, eval=F}
+ fars_summarize_years(2013)
+```
+
+
+**4. `fars_map_state` **
+
+The purpose of this function is plot the coordinates of the state and show accidents.
+
+```{r, eval=F}
+ fars_summarize_years(1,2013)
+```
