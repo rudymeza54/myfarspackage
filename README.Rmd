@@ -1,0 +1,27 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# myfarspackage
+
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.com/rudymeza54/myfarspackage.svg?branch=main)](https://travis-ci.com/rudymeza54/myfarspackage)
+<!-- badges: end -->
+
+The goal of myfarspackage is to ...
+
+## Installation
+
+You can install the development version of myfarspackage from [GitHub](https://github.com/) with:
+
