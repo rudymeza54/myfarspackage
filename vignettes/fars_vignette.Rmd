@@ -21,7 +21,7 @@ The fars Package reads an example dataset from the  US National Highway Traffic 
 
 
 ```{r, eval=F}
-library(fars)
+library(myfarspackage)
 ```
 
 ## Package Dependencies
