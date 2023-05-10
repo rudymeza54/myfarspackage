@@ -6,7 +6,7 @@
 [![Build
 Status](https://app.travis-ci.com/rudymeza54/myfarspackage.svg?branch=main)](https://app.travis-ci.com/rudymeza54/myfarspackage)
 
-The goal of myfarspackage is to …
+The goal of myfarspackage is to show my first built package!!!
 
 ## Installation
 
